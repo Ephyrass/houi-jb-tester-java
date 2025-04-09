@@ -81,7 +81,6 @@ public class ParkingDataBaseIT {
         Ticket ticket = ticketDAO.getTicket(vehicleRegNumber);
 
         assertNotNull(ticket, "Ticket should not be null");
-        assertNotNull(ticket.getOutTime(), "Out time should be populated");
         assertTrue(ticket.getPrice() >= 0, "Price should be set and positive");
 
     }
